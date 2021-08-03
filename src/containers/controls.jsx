@@ -20,6 +20,7 @@ class Controls extends React.Component {
             this.props.vm.setTurboMode(!this.props.turbo);
         } else {
             if (!this.props.isStarted) {
+                console.log('緑の旗を押したよ');
                 this.props.vm.start();
             }
             this.props.vm.greenFlag();
@@ -27,6 +28,7 @@ class Controls extends React.Component {
     }
     handleStopAllClick (e) {
         e.preventDefault();
+        console.log('停止ボタンを押したよ');
         this.props.vm.stopAll();
     }
     render () {
