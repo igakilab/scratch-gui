@@ -5,6 +5,7 @@ import VM from 'scratch-vm';
 import {connect} from 'react-redux';
 
 import ControlsComponent from '../components/controls/controls.jsx';
+import { $CombinedState } from 'redux';
 
 class Controls extends React.Component {
     constructor (props) {
@@ -20,6 +21,36 @@ class Controls extends React.Component {
             this.props.vm.setTurboMode(!this.props.turbo);
         } else {
             if (!this.props.isStarted) {
+                var db = OpenMyDatabase();
+                InsertRecord(db);
+
+                function OpenMyDatabase() {
+                    var dbsize = 1000;
+                var dbname = "scratch3.0 db";
+                var dbversion = "1.0";
+                var dbdescription = "scratch3.0のDatabase"
+                var db = window.openDatabase(dbname, dbversion, dbdescription, dbsize, compFunc);
+                if (db == null) {
+                    console.log("データベースが開けませんでした");
+                }
+
+                function compFunc() {
+                    console.log("データベースを作成しました");
+                }
+
+                // テーブル作成
+                db.transaction(function(tx){
+                    tx.executeSql(`
+                    create table if not exists fire (
+                        id integer primary key autoincrement,
+                        fire varchar
+                        )
+                        `)
+                        console.log("デーブルを作成しました");
+                    })
+                    return db;
+                }
+
                 console.log('緑の旗を押したよ');
                 this.props.vm.start();
             }
