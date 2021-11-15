@@ -13,6 +13,7 @@ const reducer = function (state, action) {
 };
 
 const updateBlockDrag = function (areBlocksOverGui) {
+    //console.log("ドラッグによるブロックの位置の更新");
     return {
         type: BLOCK_DRAG_UPDATE,
         areBlocksOverGui: areBlocksOverGui,

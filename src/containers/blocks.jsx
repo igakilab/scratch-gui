@@ -299,6 +299,7 @@ class Blocks extends React.Component {
         }
     }
     onWorkspaceMetricsChange () {
+        //console.log(this.props.vm.editingTarget.id);
         const target = this.props.vm.editingTarget;
         if (target && target.id) {
             // Dispatch updateMetrics later, since onWorkspaceMetricsChange may be (very indirectly)
