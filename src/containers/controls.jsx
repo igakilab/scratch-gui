@@ -64,12 +64,12 @@ function OpenMyDatabase() {
 
 // テーブル作成
 db.transaction(function (tx) {
-    tx.executeSql("CREATE TABLE graduation_research (type,place)", [],
+    tx.executeSql("CREATE TABLE graduation_research (value,type,place)", [],
       );
     }
       )
       db.transaction(function (transact) {
-          transact.executeSql("INSERT INTO graduation_research VALUES ( ?,? )", ['events','GreenFlagの終了'],
+          transact.executeSql("INSERT INTO graduation_research VALUES ( ?,?,? )", ['end','end','実行の終了'],
             );
         }
             )
