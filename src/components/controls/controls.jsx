@@ -5,7 +5,7 @@ import {defineMessages, injectIntl, intlShape} from 'react-intl';
 
 import GreenFlag from '../green-flag/green-flag.jsx';
 import StopAll from '../stop-all/stop-all.jsx';
-import DbResult from '../db-result/db-result.jsx';
+
 import TurboMode from '../turbo-mode/turbo-mode.jsx';
 
 import styles from './controls.css';
@@ -35,7 +35,6 @@ const Controls = function (props) {
         intl,
         onGreenFlagClick,
         onStopAllClick,
-        onDbResultClick,
         turbo,
         ...componentProps
     } = props;
@@ -53,11 +52,6 @@ const Controls = function (props) {
                 active={active}
                 title={intl.formatMessage(messages.stopTitle)}
                 onClick={onStopAllClick}
-            />
-            <DbResult
-                active={active}
-                title={intl.formatMessage(messages.dbTitle)}
-                onClick={onDbResultClick}
             />
             {turbo ? (
                 <TurboMode />
