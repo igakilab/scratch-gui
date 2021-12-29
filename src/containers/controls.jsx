@@ -21,8 +21,7 @@ class Controls extends React.Component {
             this.props.vm.setTurboMode(!this.props.turbo);
         } else {
             if (!this.props.isStarted) {
-                OpenMyDatabase();
-                console.log('緑の旗を押したよ');
+                //console.log('緑の旗を押したよ');
                 this.props.vm.start();
             }
             this.props.vm.greenFlag();
@@ -30,7 +29,7 @@ class Controls extends React.Component {
     }
     handleStopAllClick (e) {
         e.preventDefault();
-        console.log('停止ボタンを押したよ');
+        //console.log('停止ボタンを押したよ');
         this.props.vm.stopAll();
     }
     render () {
@@ -53,28 +52,6 @@ class Controls extends React.Component {
     }
 }
 
-var dbsize = 1000;
-var dbname = "scratch3.0 db";
-var dbversion = "1.0";
-var dbdescription = "scratch3.0のDatabase"
-
-//データベース作成
-function OpenMyDatabase() {
-    var db = window.openDatabase(dbname, dbversion, dbdescription, dbsize);
-
-// テーブル作成
-db.transaction(function (tx) {
-    tx.executeSql("CREATE TABLE graduation_research (value,type,place)", [],
-      );
-    }
-      )
-      db.transaction(function (transact) {
-          transact.executeSql("INSERT INTO graduation_research VALUES ( ?,?,? )", ['end','end','実行の終了'],
-            );
-        }
-            )
-    return db;
-}
 
 Controls.propTypes = {
     isStarted: PropTypes.bool.isRequired,
