@@ -15,6 +15,7 @@
 まず、アプリ一覧もしくは検索にgitbashを入力し起動します。
 cd scratch-guiの方まで移動してください。
 移動したら、以下の9行をコピーして貼り付けてください。
+```bash
 git remote add scratch-gui https://github.com/igakilab/scratch-gui.git
 git remote -v
 cd ../scratch-vm
@@ -24,6 +25,7 @@ cd ../
 cd scratch-vm && yarn install && yarn link
 cd ../
 cd scratch-gui && yarn link scratch-vm && yarn install
+```
 
 登録が出来たらscratch-guiにいることを確認して以下のコマンドを入力してください。
 Yarn start
