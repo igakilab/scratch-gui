@@ -1,3 +1,70 @@
+# Scratch
+## 実験準備
+今回の実験は、ローカル環境で行います。その為ローカル環境並びにプログラムのインストールを行っていただきたいので必ず読むようにしてください。
+また、何か分からないことがあれば、ご連絡ください。
+
+### gitbashのローカル環境の構築
+各自のPCにプログラムをダウンロードする前にまず、gitをinstallします。このURL（https://gitforwindows.org/）からDownloadのボタンがあるのでそこからダウンロードしてください。installについてやり方が分からなければこのURL（https://www.sejuku.net/blog/72673）を参照してください。
+
+次に下記のリンクからプログラムをダウンロードします
+https://github.com/igakilab/scratch-gui/tree/log-making
+https://github.com/igakilab/scratch-vm/tree/new-blocks
+ダウンロードしたものを解凍してscratch-gui、scratch-vmに名前を変更し任意のフォルダにまとめてください。
+### guiとvmの連動登録
+次にscratch-guiとscratch-vmを連動登録します。
+まず、アプリ一覧もしくは検索にgitbashを入力し起動します。
+cd scratch-guiの方まで移動してください。
+移動したら、以下の9行をコピーして貼り付けてください。
+git remote add scratch-gui https://github.com/igakilab/scratch-gui.git
+git remote -v
+cd ../scratch-vm
+git remote add scratch-vm https://github.com/igakilab/scratch-vm.git
+git remote -v
+cd ../
+cd scratch-vm && yarn install && yarn link
+cd ../
+cd scratch-gui && yarn link scratch-vm && yarn install
+
+登録が出来たらscratch-guiにいることを確認して以下のコマンドを入力してください。
+Yarn start
+ファイヤーウォールから許可確認がくる場合がありますが許可してください。
+少し待つとローカルホストに繋がるのでgoogle chrome から下記のリンクに入ります。
+http://localhost:8601/
+アクセスした際にcookieが許可されていないことがあるのでもし何も表示されなければ確認してください。
+
+## 実験対象のScratchプログラム
+### 実験環境
+WebサイトはGoogleChrome
+作成して頂きたいプログラムは段々と早く迫ってくる障害物を5分間ジャンプして避けきるプログラムを作ってください。
+ゲームクリア条件
+　・一度も障害物に触れずに五分間避ける
+ゲームオーバー条件
+　・障害物に触れたら負け
+
+#### 制作中のお願い
+ブロックの取り扱い
+　・変数とブロックの追加は自由ですが、プレイ画面上に表示することは禁止です
+使用可能なスクリプト
+　・最大4つまでとします
+背景
+　・1種類のみとします
+
+変数やリスト作成したときに自動でチェックボックスにチェックが着きます。記録するのには問題はありませんがチェックをつけたままだとPCに負荷がかかり動作に支障が出る場合があるので変数やリストを作った他のところにあるチェックボックスにはチェックを付けないようにしてください。
+
+## 制作終了後
+実験終了後は作成したscratchプログラムの保存データとWebSqlで所得したデータを回収します。
+### Scratchプログラムの保存方法
+画面左上にある「ファイル」をクリックし「コンピューターに保存」を選択してください。するとダウンロードフォルダの中に表示されるので名前を「学生番号(6桁)＋自身の名前」に変更してください。以下のURLからデータをアップロードしてもらったら完了です。
+(https://drive.google.com/drive/folders/1kvceXkVtfqNM4gRZTK5NJRzk6zKsGtMc?usp=sharing)
+
+### WebSqlで所得したデータの保存方法
+画面右上にある「Google Chromeの設定」から「その他のツール」、「デベロッパーツール」の順で選択してください。すると、上のバーにコンソールやアプリケーション、要素などが書かれているところがあるのでそこにある「アプリケーション」を選択してください。選択すると中央に縦のメニューバーが表示されるようになるのでそこの「ウェブSQL」から「scratch3.0db」を押したら「Editing_Table」、「Running_Table」の中のデータを所得します。以下のURLからエクセルデータを複製して名前を「学生番号(6桁)＋自身の名前」に変更してください。
+(https://drive.google.com/drive/folders/16gpy7ZNUuGxgemuVZXf2PXc9qsIw9HgP?usp=sharing)
+変更したエクセルの中に「Editing_Table」と「Running_Table」をコピーして各々張り付けしてください。コピーするときはCTRL+Aだとその他余分なモノまでコピーされるのでお手数ですが範囲選択でコピーしてください。
+
+
+
+# English
 # scratch-gui
 #### Scratch GUI is a set of React components that comprise the interface for creating and running Scratch 3.0 projects
 
