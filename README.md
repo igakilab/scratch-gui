@@ -7,8 +7,8 @@
 各自のPCにプログラムをダウンロードする前にまず、gitをinstallします。このURL（https://gitforwindows.org/）からDownloadのボタンがあるのでそこからダウンロードしてください。installについてやり方が分からなければこのURL（https://www.sejuku.net/blog/72673）を参照してください。
 
 次に下記のリンクからプログラムをダウンロードします
-https://github.com/igakilab/scratch-gui/tree/log-making
-https://github.com/igakilab/scratch-vm/tree/new-blocks
+[https://github.com/igakilab/scratch-gui/tree/log-making](https://github.com/igakilab/scratch-gui/tree/log-making)
+[https://github.com/igakilab/scratch-vm/tree/new-blocks](https://github.com/igakilab/scratch-vm/tree/new-blocks)
 ダウンロードしたものを解凍してscratch-gui、scratch-vmに名前を変更し任意のフォルダにまとめてください。
 ### guiとvmの連動登録
 次にscratch-guiとscratch-vmを連動登録します。
@@ -29,7 +29,7 @@ cd scratch-gui && yarn link scratch-vm && yarn install
 Yarn start
 ファイヤーウォールから許可確認がくる場合がありますが許可してください。
 少し待つとローカルホストに繋がるのでgoogle chrome から下記のリンクに入ります。
-http://localhost:8601/
+[http://localhost:8601/](http://localhost:8601/)
 アクセスした際にcookieが許可されていないことがあるのでもし何も表示されなければ確認してください。
 
 ## 実験対象のScratchプログラム
@@ -55,11 +55,11 @@ WebサイトはGoogleChrome
 実験終了後は作成したscratchプログラムの保存データとWebSqlで所得したデータを回収します。
 ### Scratchプログラムの保存方法
 画面左上にある「ファイル」をクリックし「コンピューターに保存」を選択してください。するとダウンロードフォルダの中に表示されるので名前を「学生番号(6桁)＋自身の名前」に変更してください。以下のURLからデータをアップロードしてもらったら完了です。
-(https://drive.google.com/drive/folders/1kvceXkVtfqNM4gRZTK5NJRzk6zKsGtMc?usp=sharing)
+[https://drive.google.com/drive/folders/1kvceXkVtfqNM4gRZTK5NJRzk6zKsGtMc?usp=sharing](https://drive.google.com/drive/folders/1kvceXkVtfqNM4gRZTK5NJRzk6zKsGtMc?usp=sharing)
 
 ### WebSqlで所得したデータの保存方法
 画面右上にある「Google Chromeの設定」から「その他のツール」、「デベロッパーツール」の順で選択してください。すると、上のバーにコンソールやアプリケーション、要素などが書かれているところがあるのでそこにある「アプリケーション」を選択してください。選択すると中央に縦のメニューバーが表示されるようになるのでそこの「ウェブSQL」から「scratch3.0db」を押したら「Editing_Table」、「Running_Table」の中のデータを所得します。以下のURLからエクセルデータを複製して名前を「学生番号(6桁)＋自身の名前」に変更してください。
-(https://drive.google.com/drive/folders/16gpy7ZNUuGxgemuVZXf2PXc9qsIw9HgP?usp=sharing)
+[https://drive.google.com/drive/folders/16gpy7ZNUuGxgemuVZXf2PXc9qsIw9HgP?usp=sharing](https://drive.google.com/drive/folders/16gpy7ZNUuGxgemuVZXf2PXc9qsIw9HgP?usp=sharing)
 変更したエクセルの中に「Editing_Table」と「Running_Table」をコピーして各々張り付けしてください。コピーするときはCTRL+Aだとその他余分なモノまでコピーされるのでお手数ですが範囲選択でコピーしてください。
 
 
