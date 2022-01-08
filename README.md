@@ -7,14 +7,21 @@
 各自のPCにプログラムをダウンロードする前にまず、gitをinstallします。このURL（https://gitforwindows.org/）からDownloadのボタンがあるのでそこからダウンロードしてください。installについてやり方が分からなければこのURL（https://www.sejuku.net/blog/72673）を参照してください。
 
 次に下記のリンクからプログラムをダウンロードします
+
 [https://github.com/igakilab/scratch-gui/tree/log-making](https://github.com/igakilab/scratch-gui/tree/log-making)
+
 [https://github.com/igakilab/scratch-vm/tree/new-blocks](https://github.com/igakilab/scratch-vm/tree/new-blocks)
+
 ダウンロードしたものを解凍してscratch-gui、scratch-vmに名前を変更し任意のフォルダにまとめてください。
 ### guiとvmの連動登録
 次にscratch-guiとscratch-vmを連動登録します。
+
 まず、アプリ一覧もしくは検索にgitbashを入力し起動します。
+
 cd scratch-guiの方まで移動してください。
+
 移動したら、以下の9行をコピーして貼り付けてください。
+
 ```bash
 git remote add scratch-gui https://github.com/igakilab/scratch-gui.git
 git remote -v
