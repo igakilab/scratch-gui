@@ -15,7 +15,7 @@ nodejsのダウンロードは[こちら](https://nodejs.org/)
 
 ダウンロードしたものを実行し、ライセンスに合意しディレクトリはそのままでカスタム設定もそのままにしてインストールを選択していってください。
 
-#### Node.jsとgitのダウンロードとインストール
+#### gitのダウンロードとインストール
 以下のURL先に「Download」のボタンがあるのでそこからダウンロードしてください。
 
 gitのダウンロードは[こちら](https://gitforwindows.org/)
@@ -46,12 +46,18 @@ pwd
 ```
 と入力してください。
 
-移動したら、以下の9行をコピーして貼り付けてください。
+移動したら、以下をコピーして貼り付けてください。
 
 ```bash
+git config --global user.name "test"
+git config --global user.email "kennkyuusituyou.mail@gmail.com" 
+git init
 git remote add scratch-gui https://github.com/igakilab/scratch-gui.git
 git remote -v
 cd ../scratch-vm
+git config --global user.name "test"
+git config --global user.email "kennkyuusituyou.mail@gmail.com" 
+git init
 git remote add scratch-vm https://github.com/igakilab/scratch-vm.git
 git remote -v
 cd ../
