@@ -127,7 +127,7 @@ WebサイトはGoogleChrome
 
 以下のURLからデータをアップロードしてもらったら完了です。
 
-アップロード先は[こちら](https://drive.google.com/drive/folders/1kvceXkVtfqNM4gRZTK5NJRzk6zKsGtMc?usp=sharing)
+アップロード先は[こちら](https://drive.google.com/drive/folders/16gpy7ZNUuGxgemuVZXf2PXc9qsIw9HgP?usp=sharing)
 
 ### WebSqlで所得したデータの保存方法
 画面右上にある「Google Chromeの設定」から「その他のツール」、「デベロッパーツール」の順で選択してください。
@@ -138,7 +138,7 @@ WebサイトはGoogleChrome
 
 以下のURLからエクセルデータを複製して名前を「学生番号(6桁)＋自身の名前」に変更してください。
 
-[こちら](https://drive.google.com/drive/folders/16gpy7ZNUuGxgemuVZXf2PXc9qsIw9HgP?usp=sharing)
+[こちら](https://drive.google.com/drive/folders/1kvceXkVtfqNM4gRZTK5NJRzk6zKsGtMc?usp=sharing)
 
 変更したエクセルの中に「Editing_Table」と「Running_Table」のデータ全てをコピーして各々張り付けしてください。
 
