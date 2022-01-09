@@ -42,6 +42,7 @@ gitのダウンロードは[こちら](https://gitforwindows.org/)
 ```bash
 npm install --global yarn
 ```
+入力したら一度閉じてgitbashをもう一度入力し起動してください。
 
 cdコマンドでscratch-guiの方まで移動してください。
 
