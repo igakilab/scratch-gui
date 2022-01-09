@@ -49,6 +49,8 @@ pwd
 移動したら、以下をコピーして貼り付けてください。
 
 ```bash
+git clone --depth 1 https://github.com/igakilab/scratch-gui.git
+git clone --depth 1 https://github.com/igakilab/scratch-vm.git
 git config --global user.name "test"
 git config --global user.email "kennkyuusituyou.mail@gmail.com" 
 git init
