@@ -38,6 +38,11 @@ gitのダウンロードは[こちら](https://gitforwindows.org/)
 
 まず、アプリ一覧もしくは検索にgitbashを入力し起動します。
 
+後のコマンドに必要なものなので下記のコマンドを実行してください。
+```bash
+npm install --global yarn
+```
+
 cdコマンドでscratch-guiの方まで移動してください。
 
 現在いる場所がわからない場合は
@@ -49,8 +54,6 @@ pwd
 移動したら、以下をコピーして貼り付けてください。
 
 ```bash
-git clone --depth 1 https://github.com/igakilab/scratch-gui.git
-git clone --depth 1 https://github.com/igakilab/scratch-vm.git
 git config --global user.name "test"
 git config --global user.email "kennkyuusituyou.mail@gmail.com" 
 git init
