@@ -215,7 +215,7 @@ class Stage extends React.Component {
     }
     onMouseUp (e) {
         const {x, y} = getEventXY(e);
-        console.log({x, y});
+        //console.log({x, y});
         const mousePosition = [x - this.rect.left, y - this.rect.top];
         this.cancelMouseDownTimeout();
         this.setState({
