@@ -32,7 +32,7 @@ scratch-guiのダウンロードは[こちら](https://github.com/igakilab/scrat
 
 scratch-vmのダウンロードは[こちら](https://github.com/igakilab/scratch-vm/tree/new-blocks)
 
-ダウンロードしたものを解凍してscratch-gui、scratch-vmに名前を変更し後でcdコマンドを使用するのでわかりやすい場所で任意のフォルダにまとめてください。
+ダウンロードしたものを解凍して中のフォルダをscratch-gui、scratch-vmに名前を変更し後でcdコマンドを使用するのでわかりやすい場所で任意のフォルダにまとめてください。
 ### guiとvmの連動登録
 次にscratch-guiとscratch-vmを連動登録します。
 
@@ -72,6 +72,9 @@ cd scratch-vm && yarn install && yarn link
 cd ../
 cd scratch-gui && yarn link scratch-vm && yarn install
 ```
+！注意！
+
+yarn install時にエラーが発生した場合解凍もしくは名前が間違っている可能性があります。
 
 登録が出来たらscratch-guiにいることを確認して以下のコマンドを入力してください。
 ```bash
